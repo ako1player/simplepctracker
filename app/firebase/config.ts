@@ -21,7 +21,8 @@ const projectAuth = firebase.auth()
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({prompt: 'select_account'});
 
-const signInWithGoogle = () => projectAuth.signInWithPopup(provider);
+const signInWithGoogle = () => projectAuth.signInWithPopup(provider)
+
 //timestamp
 const timestamp = firebase.firestore.Timestamp;
 
