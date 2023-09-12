@@ -9,7 +9,7 @@ import PCTracker from './pctracker/page';
 export default function Home() {
   const {user}:any = useAuthContext();
   return (
-    <main className="flex flex-wrap min-h-screen p-24">
+    <main className="flex flex-wrap min-h-screen">
       {user ? 
         <PCTracker />
       :
